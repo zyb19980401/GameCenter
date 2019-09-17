@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="fall2018.csc2017.gameCentre">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <activity android:name=".slidingtiles.StartingActivity" />
+        <activity android:name=".slidingtiles.GameActivity" />
+        <activity
+            android:name=".slidingtiles.SettingActivity"
+            android:exported="true"
+            android:label="Slidingtiles" />
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/title_activity_login">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".SignUpActivity" />
+        <activity android:name=".UserScoreboardActivity" />
+        <activity android:name=".TopScoreboardActivity" />
+        <activity android:name=".slidingtiles.WinnerActivity" />
+        <activity android:name=".aircraft.ACStartingActivity" />
+        <activity android:name=".aircraft.ACGameActivity" />
+        <activity android:name=".aircraft.ACGameOverActivity" />
+        <activity android:name=".two_zero_four_eight.GameActivity" />
+        <activity android:name=".GameCentreActivity" />
+        <activity android:name=".two_zero_four_eight.StartingActivity" />
+        <activity android:name=".aircraft.ACSettingActivity" />
+    </application>
+
+</manifest>

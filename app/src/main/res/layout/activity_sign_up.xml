@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/loginbackground"
+    tools:context="fall2018.csc2017.gameCentre.SignUpActivity">
+
+    <EditText
+        android:id="@+id/ValueInput"
+        android:layout_width="250dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="69dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="65dp"
+        android:ems="10"
+        android:hint="@string/password_number"
+        android:background="#e0f2f2f2"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/KeyInput"
+        android:autofillHints="" />
+
+
+    <EditText
+        android:id="@+id/KeyInput"
+        android:layout_width="250dp"
+        android:layout_height="55dp"
+        android:background="#e0f2f2f2"
+        android:layout_marginStart="69dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="65dp"
+        android:layout_marginBottom="21dp"
+        android:ems="10"
+        android:hint="@string/username_number"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/ValueInput"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="spread_inside"
+        android:autofillHints="" />
+
+    <Button
+        android:id="@+id/FinishSignUpButton"
+        android:layout_width="208dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="85dp"
+        android:text="@string/sign_up"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ValueInput" />
+
+    <CheckBox
+        android:id="@+id/showpassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="69dp"
+        android:layout_marginEnd="183dp"
+        android:layout_marginBottom="12dp"
+        android:background="#e0f2f2f2"
+        android:text="@string/show_password"
+        app:layout_constraintBottom_toTopOf="@+id/FinishSignUpButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ValueInput" />
+
+
+</android.support.constraint.ConstraintLayout>

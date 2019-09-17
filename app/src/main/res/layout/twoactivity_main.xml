@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".two_zero_four_eight.GameActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:text="@string/score"
+            android:textAppearance="@android:style/TextAppearance.Holo.Large" />
+
+        <TextView
+            android:id="@+id/tvScore"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAppearance="@android:style/TextAppearance.Holo.Large" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/twoRestartButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="0dp"
+            android:text="@string/restart" />
+
+        <Button
+            android:id="@+id/twoUndoButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="0dp"
+            android:text="@string/undo" />
+    </RelativeLayout>
+
+    <GridView
+        android:id="@+id/tablegridview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="5dp"
+        android:numColumns="4" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <Button
+            android:id="@+id/leftButton"
+            android:layout_width="120dp"
+            android:layout_height="70dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:text="@string/left"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/rightButton"
+            android:layout_width="120dp"
+            android:layout_height="70dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:text="@string/right"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/upButton"
+            android:layout_width="120dp"
+            android:layout_height="70dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="@string/up"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/downButton"
+            android:layout_width="120dp"
+            android:layout_height="70dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:text="@string/down"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+</LinearLayout>
